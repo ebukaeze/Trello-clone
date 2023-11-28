@@ -21,8 +21,8 @@ export const Navbar = () => {
               className="bg-transparent"
             >
               <Link
-                href={"/"}
-                className="text-lg font-medium hover:text-blue-500"
+                href={"/sign-in"}
+                className="text-xl font-medium hover:text-blue-500"
               >
                 Log In
               </Link>
