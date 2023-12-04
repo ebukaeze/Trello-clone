@@ -16,12 +16,12 @@ const Logo = ({ color }: Props) => {
     <Link href="/">
       <div
         className={cn(
-          "hover:opacity-70 transition items-center flex md:flex gap-x-2",
+          "hover:opacity-70 transition items-center flex h-12 md:flex gap-x-2",
           logoFont.className
         )}
       >
         <Image src={"/logo.svg"} alt="Logo" height={30} width={30} />
-        <p className={`${color ? color : "text-neutral-700"} text-lg pb-1`}>
+        <p className={`${color ? color : "text-neutral-700"} text-lg mt-1.5`}>
           Taskify
         </p>
       </div>
