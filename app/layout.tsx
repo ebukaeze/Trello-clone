@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter, Poppins } from "next/font/google";
 import "./globals.css";
 import { siteConfig } from "@/config/site";
+import { cn } from "@/lib/utils";
 
 const PoppinsFont = Poppins({
   subsets: ["latin"],
@@ -32,7 +33,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={PoppinsFont.variable}>{children}</body>
+      <body className={cn("bg-slate-50", PoppinsFont.variable)}>
+        {children}
+      </body>
     </html>
   );
 }
